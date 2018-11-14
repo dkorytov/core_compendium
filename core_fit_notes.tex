@@ -6,6 +6,7 @@
 \usepackage[margin=0.75in]{geometry}
 \usepackage{float}
 \usepackage{subcaption}
+\usepackage{hyperref}
 \newcommand\mynotes[1]{\textcolor{red}{#1}}
 \author{Dan Korytov}
 \title {\textbf{Core Compendium}:\\[.2em]Options on Fitting Cores to Data}
@@ -216,6 +217,17 @@ several options on how to calculate the likelihood function.
   abundance. \textbf{Note}: While fitting for the abundance and
   profiles, we can't get a good fit to the profile. \mynotes{Is this
     only a two parameter fit? Can I look at merging as well?}
+
+
+\item \textbf{Fitting Global Abundance}: Instead of locking the
+  parameters to follow the global abundance of galaxies, the global
+  abundance is taking into account for the likelihood evaluation. See
+  \hyperref[sec:abundance example]{link\_to\_appendix}  for an example on the
+  effect on the likelihood/ cost function. So far the fit looks pretty
+  good. :)
+%%TODO
+%%Check that the link is working correctly. 
+
   
 \item \textbf{2-point function}: Not implemented. 
 
@@ -456,8 +468,38 @@ problem (only two or three parameters) lend
     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig6.png}
     \caption{a}
   \end{subfigure}
-  
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Basic Fit Disruption Merger
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{R$_{\mathrm{disrupt}}$,  R$_{\mathrm{merge}}$ and Global Abundance Fit} 
+\label{sec:abundance example}
+For this type of fit, not only are we trying to match the profile, but
+also the global abundance of cores. 
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd.param/calc_likelihood_bounds.py/fig2.png}
+    \caption{Only fitting cluster profiles}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd_abundance_only.param/calc_likelihood_bounds.py/fig2.png}
+    \caption{Only fitting global abundance}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd_abundance.param/calc_likelihood_bounds.py/fig2.png}
+    \caption{Fitting both the cluster profiles and the abundance}
+  \end{subfigure}
+  \caption{ These three figures show the cost function on the same
+    grid of parameter space for (a) fitting the cluster profiles only,
+    (b) fitting the global abundance only and (c) the profiles and
+    abundance. The wiggles from the 1D costs in (b) come from the grid
+    size being smaller than the spread of the line. }
+\end{figure}
+  
+
+
+  
 \clearpage
 
 
