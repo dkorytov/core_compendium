@@ -258,249 +258,558 @@ problem (only two or three parameters) lend
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Red mapper basic distributions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\onecolumn
-\section{RedMapper distributions}
+%% \onecolumn
+%% \section{RedMapper distributions}
 
-\begin{figure}[H]
-  \center\includegraphics[width=0.4\textwidth]{figs/404.png}
-  \caption{Redmapper cluster Redshift distribution}
-  \label{fig:redmapper_redshift}
-\end{figure}
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.4\textwidth]{figs/404.png}
+%%   \caption{Redmapper cluster Redshift distribution}
+%%   \label{fig:redmapper_redshift}
+%% \end{figure}
 
 
-\begin{figure}[H]
-  \center\includegraphics[width=0.4\textwidth]{figs/404.png}
-  \caption{Redmapper cluster Mass distribution}
-  \label{fig:redmapper_mass}
-\end{figure}
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.4\textwidth]{figs/404.png}
+%%   \caption{Redmapper cluster Mass distribution}
+%%   \label{fig:redmapper_mass}
+%% \end{figure}
 
-\begin{figure}[H]
-  \center\includegraphics[width=0.4\textwidth]{figs/404.png}
-  \caption{Redmapper cluster redshift and mass distribution}
-  \label{fig:redmapper_redshift_mass}
-\end{figure}
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.4\textwidth]{figs/404.png}
+%%   \caption{Redmapper cluster redshift and mass distribution}
+%%   \label{fig:redmapper_redshift_mass}
+%% \end{figure}
 
-\begin{figure}[H]
-  \center\includegraphics[width=0.4\textwidth]{figs/404.png}
-  \caption{Calculated Richness vs Mass}
-  \label{fig:redmapper_richness_mass}
-\end{figure}
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.4\textwidth]{figs/404.png}
+%%   \caption{Calculated Richness vs Mass}
+%%   \label{fig:redmapper_richness_mass}
+%% \end{figure}
 
-\clearpage
+%% \clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Simulation basic distributions
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Simulation Distributions}
+%% \section{Simulation Distributions}
 
-\begin{figure}[H]
-  \center\includegraphics[width=0.4\textwidth]{figs/404.png}
-  \caption{}
-  \label{fig:simulation_mass_redshift}
-\end{figure}
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.4\textwidth]{figs/404.png}
+%%   \caption{}
+%%   \label{fig:simulation_mass_redshift}
+%% \end{figure}
 
-\clearpage
+%% \clearpage
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Basic Fit Disruption
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Basic R$_{\mathrm{disrupt}}$ Fit}
-
+\onecolumn
+\section{Mstar+0, M200m}
+\subsection{Profile fit, Disruption Only}
 \begin{figure}[H]
-  \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd.param/calc_likelihood_bounds.py/fig1.png}
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
   \label{fig:basic_rd:likelihood}
 \end{figure}
 
 \begin{figure}[H]
-  \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd_wide.param/calc_likelihood_bounds.py/fig2.png}
-  \caption{Cost function on a wide parameter grid search. There is only a single mode that gives a good it. It has the same
-  contours as the likelihood plot above.}
-  \label{fig:basic_rd:cost}
-\end{figure}
-
-\begin{figure}[H]
-  \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig1.png}
-  \caption{The surface galaxy profiles for cores and redmapper clusters}
-  \label{fig:basic_rd:profile}
-\end{figure}
-
-\begin{figure}[H]
-  \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig9.png}
-  \caption{The source of error/$\chi^{2}$ from the fit. }
-  \label{fig:basic_rd:error}
-\end{figure}
-
-
-\begin{figure}
-  \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig2.png}
-    \caption{a}
-  \end{subfigure}
-  \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig3.png}
-    \caption{a}
-  \end{subfigure}
-  \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig4.png}
-    \caption{a}
-  \end{subfigure}%
-  \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig5.png}
-    \caption{a}
-  \end{subfigure}
-  \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig6.png}
-    \caption{a}
-  \end{subfigure}
-  
-\end{figure}
-\clearpage
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Basic Fit Merger
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Basic R$_{\mathrm{merge}}$ Fit}
-
-\begin{figure}[H]
-  \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rm.param/calc_likelihood_bounds.py/fig1.png}
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/calc_likelihood_bounds.py/fig2.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
-  \label{fig:basic_rm:likelihood}
+  \label{fig:basic_rd:likelihood}
 \end{figure}
 
-\begin{figure}[H]
-  \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rm_wide.param/calc_likelihood_bounds.py/fig2.png}
-  \caption{Cost function on a wide parameter grid search. There is only a single mode that gives a good it. It has the same
-  contours as the likelihood plot above.}
-  \label{fig:basic_rm:cost}
-\end{figure}
-
-\begin{figure}[H]
-  \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig1.png}
-  \caption{The surface galaxy profiles for cores and redmapper clusters}
-  \label{fig:basic_rm:profile}
-\end{figure}
-
-\begin{figure}[H]
-  \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig9.png}
-  \caption{The source of error/$\chi^{2}$ from the fit. }
-  \label{fig:basic_rm:error}
-\end{figure}
 
 \begin{figure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig2.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/plot_zmrs.py/fig2.png}
     \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig3.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/plot_zmrs.py/fig3.png}
     \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig4.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/plot_zmrs.py/fig4.png}
     \caption{a}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig5.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/plot_zmrs.py/fig5.png}
     \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig6.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/plot_zmrs.py/fig6.png}
     \caption{a}
   \end{subfigure}
   
 \end{figure}
 \clearpage
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Basic Fit Disruption Merger
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Basic R$_{\mathrm{disrupt}}$ and R$_{\mathrm{merge}}$ Fit}
 
+\subsection{Profile fit, Merging Only}
 \begin{figure}[H]
-  \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd_rm.param/calc_likelihood_bounds.py/fig1.png}
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
-  \label{fig:basic_rd_rm:likelihood}
+  \label{fig:basic_rd:likelihood}
 \end{figure}
 
 \begin{figure}[H]
-  \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd_rm_wide.param/calc_likelihood_bounds.py/fig2.png}
-  \caption{Cost function on a wide parameter grid search. There is only a single mode that gives a good it. It has the same
-  contours as the likelihood plot above.}
-  \label{fig:basic_rd_rm:cost}
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
 \end{figure}
 
-\begin{figure}[H]
-  \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig1.png}
-  \caption{The surface galaxy profiles for cores and redmapper clusters}
-  \label{fig:basic_rd_rm:profile}
-\end{figure}
-
-\begin{figure}[H]
-  \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig9.png}
-  \caption{The source of error/$\chi^{2}$ from the fit. }
-  \label{fig:basic_rd_rm:error}
-\end{figure}
 
 \begin{figure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig2.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/plot_zmrs.py/fig2.png}
     \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig3.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/plot_zmrs.py/fig3.png}
     \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig4.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/plot_zmrs.py/fig4.png}
     \caption{a}
   \end{subfigure}%
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig5.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/plot_zmrs.py/fig5.png}
     \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig6.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/plot_zmrs.py/fig6.png}
     \caption{a}
   \end{subfigure}
+  
 \end{figure}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Basic Fit Disruption Merger
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{R$_{\mathrm{disrupt}}$,  R$_{\mathrm{merge}}$ and Global Abundance Fit} 
-\label{sec:abundance example}
-For this type of fit, not only are we trying to match the profile, but
-also the global abundance of cores. 
+\clearpage
+
+
+\subsection{Profile fit, Disruption + Merging}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
 
 \begin{figure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd.param/calc_likelihood_bounds.py/fig2.png}
-    \caption{Only fitting cluster profiles}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd_abundance_only.param/calc_likelihood_bounds.py/fig2.png}
-    \caption{Only fitting global abundance}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd_abundance.param/calc_likelihood_bounds.py/fig2.png}
-    \caption{Fitting both the cluster profiles and the abundance}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
   \end{subfigure}
-  \caption{ These three figures show the cost function on the same
-    grid of parameter space for (a) fitting the cluster profiles only,
-    (b) fitting the global abundance only and (c) the profiles and
-    abundance. The wiggles from the 1D costs in (b) come from the grid
-    size being smaller than the spread of the line. }
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+  
 \end{figure}
-  
-
-
-  
 \clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Abundance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Profile + Abundance fit, Disruption Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+\subsection{Profile + Abundancefit, Merging Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+
+\end{figure}
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+
+\subsection{Profile + Abundance fit, Disruption + Merging}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% M200_crit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{M200c, Mstar+0}
+\subsection{Profile fit, Disruption Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\subsection{Profile fit, Merging Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+
+\subsection{Profile fit, Disruption + Merging}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Basic Fit Disruption
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \section{Basic R$_{\mathrm{disrupt}}$ Fit}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd.param/calc_likelihood_bounds.py/fig1.png}
+%%   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+%%     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+%%   \label{fig:basic_rd:likelihood}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd_wide.param/calc_likelihood_bounds.py/fig2.png}
+%%   \caption{Cost function on a wide parameter grid search. There is only a single mode that gives a good it. It has the same
+%%   contours as the likelihood plot above.}
+%%   \label{fig:basic_rd:cost}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig1.png}
+%%   \caption{The surface galaxy profiles for cores and redmapper clusters}
+%%   \label{fig:basic_rd:profile}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig9.png}
+%%   \caption{The source of error/$\chi^{2}$ from the fit. }
+%%   \label{fig:basic_rd:error}
+%% \end{figure}
+
+
+%% \begin{figure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig2.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig3.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig4.png}
+%%     \caption{a}
+%%   \end{subfigure}%
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig5.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd.param/plot_zmrs.py/fig6.png}
+%%     \caption{a}
+%%   \end{subfigure}
+  
+%% \end{figure}
+%% \clearpage
+
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %% Basic Fit Merger
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \section{Basic R$_{\mathrm{merge}}$ Fit}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rm.param/calc_likelihood_bounds.py/fig1.png}
+%%   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+%%     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+%%   \label{fig:basic_rm:likelihood}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rm_wide.param/calc_likelihood_bounds.py/fig2.png}
+%%   \caption{Cost function on a wide parameter grid search. There is only a single mode that gives a good it. It has the same
+%%   contours as the likelihood plot above.}
+%%   \label{fig:basic_rm:cost}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig1.png}
+%%   \caption{The surface galaxy profiles for cores and redmapper clusters}
+%%   \label{fig:basic_rm:profile}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig9.png}
+%%   \caption{The source of error/$\chi^{2}$ from the fit. }
+%%   \label{fig:basic_rm:error}
+%% \end{figure}
+
+%% \begin{figure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig2.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig3.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig4.png}
+%%     \caption{a}
+%%   \end{subfigure}%
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig5.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rm.param/plot_zmrs.py/fig6.png}
+%%     \caption{a}
+%%   \end{subfigure}
+  
+%% \end{figure}
+%% \clearpage
+
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %% Basic Fit Disruption Merger
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \section{Basic R$_{\mathrm{disrupt}}$ and R$_{\mathrm{merge}}$ Fit}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd_rm.param/calc_likelihood_bounds.py/fig1.png}
+%%   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+%%     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+%%   \label{fig:basic_rd_rm:likelihood}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.6\textwidth]{figs/cfn/basic_rd_rm_wide.param/calc_likelihood_bounds.py/fig2.png}
+%%   \caption{Cost function on a wide parameter grid search. There is only a single mode that gives a good it. It has the same
+%%   contours as the likelihood plot above.}
+%%   \label{fig:basic_rd_rm:cost}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig1.png}
+%%   \caption{The surface galaxy profiles for cores and redmapper clusters}
+%%   \label{fig:basic_rd_rm:profile}
+%% \end{figure}
+
+%% \begin{figure}[H]
+%%   \center\includegraphics[width=0.8\textwidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig9.png}
+%%   \caption{The source of error/$\chi^{2}$ from the fit. }
+%%   \label{fig:basic_rd_rm:error}
+%% \end{figure}
+
+%% \begin{figure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig2.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig3.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig4.png}
+%%     \caption{a}
+%%   \end{subfigure}%
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig5.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/basic_rd_rm.param/plot_zmrs.py/fig6.png}
+%%     \caption{a}
+%%   \end{subfigure}
+%% \end{figure}
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% %% Basic Fit Disruption Merger
+%% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% \section{R$_{\mathrm{disrupt}}$,  R$_{\mathrm{merge}}$ and Global Abundance Fit} 
+%% \label{sec:abundance example}
+%% For this type of fit, not only are we trying to match the profile, but
+%% also the global abundance of cores. 
+
+%% \begin{figure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd.param/calc_likelihood_bounds.py/fig2.png}
+%%     \caption{Only fitting cluster profiles}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd_abundance_only.param/calc_likelihood_bounds.py/fig2.png}
+%%     \caption{Only fitting global abundance}
+%%   \end{subfigure}
+%%   \begin{subfigure}{.5\textwidth}
+%%     \centering\includegraphics[width=1.0\linewidth]{figs/cfn/simet/simet_rd_abundance.param/calc_likelihood_bounds.py/fig2.png}
+%%     \caption{Fitting both the cluster profiles and the abundance}
+%%   \end{subfigure}
+%%   \caption{ These three figures show the cost function on the same
+%%     grid of parameter space for (a) fitting the cluster profiles only,
+%%     (b) fitting the global abundance only and (c) the profiles and
+%%     abundance. The wiggles from the 1D costs in (b) come from the grid
+%%     size being smaller than the spread of the line. }
+%% \end{figure}
+  
+
+
+  
+%% \clearpage
 
 
 \end{document}
