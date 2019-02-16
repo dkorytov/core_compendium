@@ -244,10 +244,16 @@ The RMS of the Poisson noise and error on the mean for each stacked radial bin.
 
 \subsection{Posterior}
 Either through MCMC or grid search. The low dimensionality of the
-problem (only two or three parameters) lend 
+problem (only two or three parameters) lend to faster and more
+accurate results by a flat grid search. 
 
 \section{Fit Results}
-
+\begin{figure}
+  \includegraphics[width=0.6\textwidth]{figs/generate_parameter_dist.py/fig1.png}
+  \caption{Model Parameters for fitting different data sets and
+    models. The galaxies modeled in this figure are Mstar+0 galaxies. }
+\end{figure}
+\twocolumn
 \clearpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Appendix
@@ -307,7 +313,7 @@ problem (only two or three parameters) lend
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \onecolumn
 \section{Mstar+0, M200m}
-\subsection{Profile fit, Disruption Only}
+\subsection{M200m, Mstar+0, Profile fit, Disruption Only}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -317,6 +323,20 @@ problem (only two or three parameters) lend
 
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd3_zoom.param/calc_likelihood_bounds.py/fig2.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
   \label{fig:basic_rd:likelihood}
@@ -349,7 +369,7 @@ problem (only two or three parameters) lend
 \clearpage
 
 
-\subsection{Profile fit, Merging Only}
+\subsection{M200m, Mstar+0, Profile fit, Merging Only}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -359,6 +379,20 @@ problem (only two or three parameters) lend
 
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
   \label{fig:basic_rd:likelihood}
@@ -391,7 +425,7 @@ problem (only two or three parameters) lend
 \clearpage
 
 
-\subsection{Profile fit, Disruption + Merging}
+\subsection{M200m, Mstar+0, Profile fit, Disruption + Merging}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -401,6 +435,20 @@ problem (only two or three parameters) lend
 
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
   \label{fig:basic_rd:likelihood}
@@ -438,7 +486,7 @@ problem (only two or three parameters) lend
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{Profile + Abundance fit, Disruption Only}
+\subsection{M200m, Mstar+0, Profile + Abundance fit, Disruption Only}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -448,6 +496,20 @@ problem (only two or three parameters) lend
 
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3_zoom.param/calc_likelihood_bounds.py/fig2.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
   \label{fig:basic_rd:likelihood}
@@ -479,7 +541,7 @@ problem (only two or three parameters) lend
 \clearpage
 
 
-\subsection{Profile + Abundancefit, Merging Only}
+\subsection{M200m, Mstar+0, Profile + Abundancefit, Merging Only}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -494,6 +556,21 @@ problem (only two or three parameters) lend
   \label{fig:basic_rd:likelihood}
 
 \end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
 \begin{figure}
   \begin{subfigure}{.5\textwidth}
     \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rm3.param/plot_zmrs.py/fig2.png}
@@ -520,7 +597,7 @@ problem (only two or three parameters) lend
 
 
 
-\subsection{Profile + Abundance fit, Disruption + Merging}
+\subsection{M200m, Mstar+0, Profile + Abundance fit, Disruption + Merging}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -535,9 +612,23 @@ problem (only two or three parameters) lend
   \label{fig:basic_rd:likelihood}
 \end{figure}
 
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
 \begin{figure}
   \begin{subfigure}{.5\textwidth}
-    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd3.param/plot_zmrs.py/fig2.png}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/mean/abund/rd_rm3.param/plot_zmrs.py/fig2.png}
     \caption{a}
   \end{subfigure}
   \begin{subfigure}{.5\textwidth}
@@ -565,7 +656,7 @@ problem (only two or three parameters) lend
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{M200c, Mstar+0}
-\subsection{Profile fit, Disruption Only}
+\subsection{M200c, Mstar+0, Profile fit, Disruption Only}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -580,7 +671,47 @@ problem (only two or three parameters) lend
   \label{fig:basic_rd:likelihood}
 \end{figure}
 
-\subsection{Profile fit, Merging Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+
+\subsection{M200c, Mstar+0, Profile fit, Merging Only}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -595,8 +726,46 @@ problem (only two or three parameters) lend
   \label{fig:basic_rd:likelihood}
 \end{figure}
 
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
 
-\subsection{Profile fit, Disruption + Merging}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+\subsection{M200c, Mstar+0, Profile fit, Disruption + Merging}
 \begin{figure}[H]
   \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
   \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
@@ -610,6 +779,382 @@ problem (only two or three parameters) lend
     1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
   \label{fig:basic_rd:likelihood}
 \end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/rd_rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+\subsection{M200c, Mstar+0, Profile + Abundance, Disruption Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+
+\subsection{M200c, Mstar+0, Profile + Abundance, Merging Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+\subsection{M200c, Mstar+0, Profile + Abundance, Disruption + Merging}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar0/crit/abund/rd_rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+\end{figure}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Mstar 0 galaxies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Mstar+1, M200m}
+\subsection{M200m, Mstar+1, Profile fit, Disruption Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+  
+\end{figure}
+\clearpage
+
+
+\subsection{M200m, Mstar+1, Profile fit, Merging Only}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+  
+\end{figure}
+\clearpage
+
+
+\subsection{M200m, Mstar+1, Profile fit, Disruption + Merging}
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig1.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+\begin{figure}[H]
+  \center\includegraphics[width=0.6\textwidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3_zoom.param/calc_likelihood_bounds.py/fig2.png}
+  \caption{Likelihood on a parameter grid around the best mode. The marginalized parameter likelihood have
+    1 $\sigma$ areas shaded in blue. The 2D likelihood distributions have 1 $\sigma$  and 2 $\sigma$ contours}
+  \label{fig:basic_rd:likelihood}
+\end{figure}
+
+
+\begin{figure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3.param/plot_zmrs.py/fig2.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3.param/plot_zmrs.py/fig3.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3.param/plot_zmrs.py/fig4.png}
+    \caption{a}
+  \end{subfigure}%
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3.param/plot_zmrs.py/fig5.png}
+    \caption{a}
+  \end{subfigure}
+  \begin{subfigure}{.5\textwidth}
+    \centering\includegraphics[width=1.0\linewidth]{figs/params/cfn/simet/mstar1/mean/rd_rm3.param/plot_zmrs.py/fig6.png}
+    \caption{a}
+  \end{subfigure}
+  
+\end{figure}
+\clearpage
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Basic Fit Disruption
