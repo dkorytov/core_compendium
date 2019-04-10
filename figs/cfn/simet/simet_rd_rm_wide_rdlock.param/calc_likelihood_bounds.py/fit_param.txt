@@ -1,3 +1,0 @@
-m_infall	219910650000.0
-r_disrupt	4.5628e-41
-r_merger	0.1369717
